@@ -44,15 +44,14 @@ function App() {
   return (
     <div>
       <main className="container">
-
-        <div className="search-box">
+        <div className="search-box" style={{ borderRadius: '0' }}>
           <input
             type="text"
             className="search-bar"
             placeholder="Search..."
             onChange={(e) => setQuery(e.target.value)}
             value={query}
-            style={{textTransform: "capitalize"}}
+            style={{textTransform: "capitalize", borderRadius: '0'}}
             onKeyPress={search}
           ></input>
         </div>
